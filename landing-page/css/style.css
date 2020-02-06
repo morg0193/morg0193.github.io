@@ -1,3 +1,483 @@
-p {
-  font-size: 50px;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+*, *:after, *:before{
+  box-sizing: border-box;
+}
+
+/*Set html and body height to full size of content so footer can be fixed to the bottom of the screen*/ 
+html, body{
+  height: 100%;
+}
+
+/*Set background image and made body a flex layout to fix footer to bottom of screen*/
+body{
+  display: flex;
+  flex-direction: column;
+  background-color: #F7F7FF;
+  background-image: url(../images/bg-image/scooter.svg);
+  background-repeat: no-repeat;
+  background-position: center 530px;
+  background-size: 290px 210px;
+}
+
+/*Size and positioning for top Dash logo*/
+img[alt="Dash Logo"]{
+  width: 114.73px;
+  height: auto;
+  margin-left: 10%;
+  margin-bottom: 20px;
+}
+
+/*Center main body elements*/
+.container{
+  display: grid;
+  width: 81%;
+  margin: auto;
+}
+
+/*Set a margin at bottom of main body header text to accomodate for background image*/
+.title-text{
+  margin-bottom: 232px;
+}
+
+/*Default styling for h1 elements*/
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  padding-bottom: 10px;
+  line-height: 73px;
+}
+
+/*Default styling for p elements in the main body header area*/
+.title-text p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+/*Default styling for the main body application form*/
+.apply-form {
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 5px 5px 10px grey;
+  padding: 15px 0 25px 0;
+  margin-bottom: 45px;
+}
+
+/*Default styling for h2 elements*/
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  width: 83%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+/*Default styling for the main body application form paragraph elements*/
+.apply-form p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  width: 83%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+/*Generates the main body form paragraph text*/
+.iso:after{
+  content: "Enter your info below.";
+}
+
+/*Set font for use in input text boxes*/
+input{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*Default styling for text input boxes in main body form*/
+.apply-form input[type="text"] {
+  display: block;
+  background-color: #F4F4F5;
+  border: none;
+  border-radius: 15px;
+  width: 83%;
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 10px 0 10px 10px;
+}
+
+/*Used for proper alignment of checkbox element*/
+.cbox{
+  width: 83%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+/*Code adapted from https://medium.com/claritydesignsystem/pure-css-accessible-checkboxes-and-radios-buttons-54063e759bb3 in the following section. Used to create custom checkbox*/
+
+/*Hides original checkbox and sets its position*/
+.apply-form input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+}
+
+/*Default styling for label elements and posistioning*/
+label{
+  position: relative;
+  display: inline-block;
+  padding-left: 35px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  padding-top: 10px;
+}
+
+/*Sets the positional boundaries for a new checkbox*/
+label:before, label:after{
+  position: absolute;
+  content: "";
+  display: inline-block;
+}
+
+/*Styling for custom checkbox*/
+label:before{
+  height: 25px;
+  width: 25px;
+  border: 1px solid black;
+  border-radius: 5px;
+  left: 0px;
+  top: 0px;
+}
+
+/*Styling for custom checkmark*/
+label:after{
+  height: 8px;
+  width: 14px;
+  border-left: 2px solid;
+  border-bottom: 2px solid; 
+  transform: rotate(-45deg);  
+  left: 7px;
+  top: 9px;
+}
+
+/*Hides checkmark on page load*/
+.apply-form input[type="checkbox"] + label:after{
+  content: none;
+}
+
+/*Toggle for checkmark visibility*/
+.apply-form input[type="checkbox"]:checked + label:after{
+  content: "";
+}
+/*Section End =====================================================================================================================================*/
+
+/*Default styling for main body form submit button*/
+.apply-form input[type="submit"] {
+  display: block;
+  border: none;
+  border-radius: 15px;
+  background-color: #57EEAB;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  width: 83%;
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 15px 0 15px 0;
+}
+
+/*Default styling for main body form text link*/
+a{
+  text-decoration: none;
+  color: #FF8480;
+}
+
+/*Overrides default styling for main body form paragraph elements for text below button*/
+.smaller-text p{
+  font-size: 14px;
+  line-height: 18px;
+}
+
+/*Default footer styling*/
+footer{
+  background-color: #FFFD8C;
+  padding: 22px 0 22px 0;
+}
+
+/*Default styling for h3 elements*/
+h3{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  width: 87%;
+  margin-bottom: 10px;
+}
+
+/*Default styling for paragraph elements in the footer*/
+footer p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 10px;
+}
+
+/*Centering footer content*/
+.content{
+  width: 80%;
+  margin: auto;
+}
+
+/*Creating and styling a grid for footer form input elements*/
+.calculate-form{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 70px 1fr;
+  margin-bottom: 30px;
+}
+
+/*Styling and positioning footer form hours input*/
+input[name="hours"]{
+  grid-column: 1 / 2;
+  display: block;
+  background-color: #F4F4F5;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 0 10px 10px;
+}
+
+/*Styling and positioning footer form city input*/
+input[name="city"]{
+  grid-column: 2 / 3;
+  display: block;
+  background-color: #F4F4F5;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 0 10px 10px;
+}
+
+/*Styling and positioning footer form button input*/
+input[value="CALCULATE"]{
+  grid-column: 1 / 3;
+  display: block;
+  border: none;
+  border-radius: 10px;
+  background-color: #FF8480;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 5px 0 5px 0;
+}
+
+/*Creating a horizontal flex for footer social media icon elements and centering*/
+.icon-flex{
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Media query to adjust background image positioning when text height changes*/
+@media (min-width: 410px){
+  body{
+    background-position: center 457px;
+  }
+}
+
+/*Media query to adjust background image positioning when text height changes*/
+@media (min-width: 528px){
+  body{
+    background-position: center 428px;
+  }
+}
+
+/*Tablet breakpoint*/
+@media (min-width: 600px) {
+
+  /*Resizing and repositioning background image*/
+  body{
+    background-position: center 488px;
+    background-size: 420px 307px;
+  }
+
+  /*Adjust main body content width*/
+  .container{
+    width: 78%;
+  }
+  
+  /*Override h1 styles*/
+  h1{
+    font-size: 80px;
+    line-height: 97px;
+  }
+
+  /*Change bottom margin to accomodate for background image*/
+  .title-text{
+    margin-bottom: 317px;
+  }
+
+  /*Change padding in main body form*/
+  .apply-form{
+    padding: 30px 0 40px 0;
+  }
+
+  /*Repositioning h2*/
+  h2{
+    width: 87%;
+  }
+
+  /*Override main body form paragraph element styles and reposition them*/
+  .apply-form p {
+    font-size: 30px;
+    line-height: 37px;
+    width: 87%;
+  }
+
+  /*Change font size for input text boxes*/
+  input{
+    font-size: 18px;
+  }
+
+  /*Recenter text input boxes and add padding*/
+  .apply-form input[type="text"] {
+    width: 87%;
+    padding: 16.5px 0 16.5px 15px;
+  }
+
+  /*Reposition checkbox*/
+  .cbox{
+    width: 87%;
+  }
+
+  /*Overwrite default label styles*/
+  label{
+    font-size: 20px;
+    line-height: 24px;
+    padding-top: 0;
+  }
+
+  /*Recenter main body form button, incrase text size*/
+  .apply-form input[type="submit"] {
+    width: 87%;
+    font-size: 32px;
+  }
+
+  /*Overwrite default styling for the smaller text under the main body form button*/
+  .smaller-text p{
+    font-size: 17px;
+    text-align: center;
+  }
+
+  /*Change grid layout for footer form*/
+  .calculate-form{
+    grid-template-columns: 120px 1fr 1fr;
+    margin-bottom: 30px;
+  }
+
+  /*Adjust button position in footer form grid*/
+  input[value="CALCULATE"]{
+    grid-column: 3 / 4;
+  }
+
+  /*Change width of icon flexbox*/
+  .icon-flex{
+    width: 34%;
+  }
+}
+
+/*Media query to adjust background image positioning when text height changes*/
+@media (min-width: 840px){
+  body{
+    background-position: center 391px;
+  }
+}
+
+/*Second breakpoint*/
+@media (min-width: 1080px){
+
+  /*Center background image for desktop and make size scalable rather than static*/
+  body{
+    background-position: center center;
+    background-size: 43% auto;
+  }
+
+  /*Adjust top logo positioning and create more space between the logo and main body content*/
+  img[alt="Dash Logo"]{
+    margin-left: 7.3%;
+    margin-bottom: 120px;
+  }
+
+  /*Give main body content a grid layout that pushed the two major elements to either side of the central background image*/
+  .container{
+    width: 85%;
+    grid-column-gap: 34%;
+    grid-template-columns: 33% 33%;
+    grid-template-areas: "title apply";
+  }
+
+  /*Set the first major grid element area which contains the header text*/
+  .title-text{
+    grid-area: title;
+  }
+
+  /*Set the second major grid element area which contains the main body form*/
+  .apply-form{
+    grid-area: apply;
+  }
+
+  /*Increase spacing between h1 and the p element under it*/
+  h1{
+    padding-bottom: 30px;
+  }
+
+  /*Overwrite default paragraph styling for the main body form*/
+  .apply-form p {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  /*Changes the main body form paragraph element text*/
+  .iso:after{
+    content: "Enter your info below to get started.";
+  }
+
+  /*Overwrite paragraph styling for the smaller text in the main body form*/
+  .smaller-text p{
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  /*Turn the footer components into a flexbox*/
+  .container-two{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 0 40px 0;
+  }
+
+  /*Set a maximum footer content width*/
+  .content{
+    max-width: 615px;
+    margin: 0;
+  }
+
+  /*Set a max width for footer icons*/
+  .icon-flex{
+    max-width: 260px;
+    margin: 0;
+  }
+
+  /*Swap footer icon order*/
+  .icon-flex :nth-child(1){
+    order: 1;
+  }
+
+  /*Swap footer icon order*/
+  .icon-flex :nth-child(4){
+    order: 2;
+  }
 }

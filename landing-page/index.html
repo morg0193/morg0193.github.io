@@ -5,13 +5,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Sets favicon-->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <!--Calls meyer reset stylesheet then personal style sheet-->
+  <link rel="stylesheet" href="css/meyer-reset.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Dash Landing Page</title>
 </head>
 
 <body>
-  <p>Test</p>
-  <p>Hello</p>
+  <!--Top left logo-->
+  <img src="images/logo/logo.png" alt="Dash Logo">
+  <!--Container div for main body elements-->
+  <div class="container">
+    <div class="title-text">
+      <h1>Want to be your own boss?</h1>
+      <p>Start today and make up to $30/hr driving your own vehicle with Dash!</p>
+    </div>
+    <!--Container div for main body application form-->
+    <div class="application">
+      <form class="apply-form">
+        <h2>Apply Now</h2>
+        <!--This paragraph is intentionally left blank because the text needs to change at a breakpoint, it's contents are generated in the css stylesheet-->
+        <p class="iso"></p>
+        <input type="text" name="fname" placeholder="First name">
+        <input type="text" name="lname" placeholder="Last name">
+        <input type="text" name="pnum" placeholder="Phone number">
+        <input type="text" name="eadd" placeholder="Email Address">
+        <div class="cbox">
+          <input type="checkbox" name="agree" id="box1">
+          <label for="box1">I agree to dash terms</label>
+        </div>
+        <input type="submit" value="DRIVE WITH US">
+        <div class="smaller-text">
+          <p>Already applied? <a href="#">Check your application status here</a></p>
+        </div> 
+      </form>
+    </div>
+  </div>
+  <footer>
+    <!--Container div for footer elements-->
+    <div class="container-two">
+      <!--Container div for footer text and form grid-->
+      <div class="content">
+        <h3>See how much you can earn with Dash.</h3>
+        <p>how many hours do you want to drive with us this week?</p>
+        <form class="calculate-form">
+          <input type="text" name="hours" placeholder="Hours">
+          <input type="text" name="city" placeholder="City">
+          <input type="submit" value="CALCULATE">
+        </form>
+      </div>
+      <!--Container div for icon flexbox-->
+      <div class="icon-flex">
+        <img src="images/icons/facebook.svg" alt="Facebook Logo">
+        <img src="images/icons/instagram.svg" alt="Instagram Logo">
+        <img src="images/icons/twitter.svg" alt="Twitter Logo">
+        <img src="images/icons/linkedin.svg" alt="LinkedIn Logo">
+      </div>
+    </div>
+  </footer>
 </body>
-
 </html>
