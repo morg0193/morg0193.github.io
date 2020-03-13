@@ -1,0 +1,950 @@
+/*Import font*/
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap');
+
+/*Set reusable colours*/
+:root{
+  --accent-gray: #3C3B3A;
+  --accent-green: #26A682;
+  --white-font: #F2F2F2;
+  --drop-shadow: #124A3A;
+}
+
+/*Set border-box for all elements*/
+*{
+  box-sizing: border-box;
+}
+
+/*Set smooth scrolling*/
+html{
+  scroll-behavior: smooth;
+}
+
+.nav-back{
+  background-color: var(--accent-gray);
+}
+
+/*Styling and layout for top nav*/
+.top-nav{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 23px 0;
+}
+
+/*Size for nav logo img*/
+.top-nav img{
+  width: 88px;
+  height: 54px;
+}
+
+/*Styles for top nav font*/
+.top-nav a{
+  text-decoration: none;
+  color: var(--white-font);
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  margin-top: 22px;
+}
+
+/*Bolding top nav font for active page*/
+.top-nav .active-link{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+/*Banner layout*/
+.banner{
+  width: 80%;
+  margin: auto;
+  padding: 25px 0;
+}
+
+/*The following section defines styling for all default text elements*/
+h1{
+  font-family: 'Raleway', sans-serif;
+  color: var(--accent-gray);
+  font-size: 40px;
+  line-height: 47px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+h2{
+  font-family: 'Raleway', sans-serif;
+  color: var(--accent-gray);
+  font-size: 32px;
+  line-height: 37px;
+}
+
+h3{
+  font-family: 'Raleway', sans-serif;
+  color: var(--accent-green);
+  font-size: 24px;
+  line-height: 29px;
+}
+
+h5{
+  font-family: 'Raleway', sans-serif;
+  color: var(--white-font);
+  font-size: 18px;
+  line-height: 35px;
+}
+
+h6{
+  font-family: 'Raleway', sans-serif;
+  color: var(--accent-gray);
+  font-size: 20px;
+  line-height: 35px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+p{
+  font-family: 'Raleway', sans-serif;
+  color: var(--accent-gray);
+  font-size: 16px;
+  line-height: 35px;
+}
+
+/*The following section define text modifier classes*/
+.semi-b{
+  font-weight: 600;
+}
+
+.ital{
+  font-style: italic;
+}
+
+.light-txt{
+  color: var(--white-font);
+}
+
+.bolded{
+  font-weight: 700;
+}
+
+.dark-txt{
+  color: var(--accent-gray);
+}
+
+.xl{
+  font-size: 56px;
+  line-height: 66px;
+}
+
+/*Styling and flex layout for recreation icons*/
+.rec-icons{
+  max-width: 375px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+/*Sizing and layout for recreation icons*/
+.bowling{
+  width: 64px;
+  margin-left: 25px;
+  margin-right: calc(100% - 203px);
+}
+
+.rclimb{
+  width: 114px;
+}
+
+.fitico{
+  width: 113px;
+  margin-top: 20px;
+}
+
+.court{
+  width: 98px;
+  margin-right: 7px;
+  margin-top: 20px;
+}
+
+/*Styling for the get started button*/
+.start{
+  background-color: var(--accent-green);
+  border: none;
+  width: 100%;
+  color: var(--white-font);
+  font-family: 'Raleway', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 37px;
+  border-radius: 40px;
+  padding: 7px 0;
+  box-shadow: 0 10px 20px -5px var(--drop-shadow);
+}
+
+/*Styling for the banner image*/
+.disc-img{
+  width: 100%;
+  margin: auto;
+  margin-top: 35px;
+}
+
+/*Setting default styling for scroll down arrow but hiding it for mobile*/
+.scroll-arrow{
+  display: none;
+  width: 40px;
+  margin: auto;
+}
+
+.scroll-arrow p{
+  line-height: 19px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.scroll-arrow img{
+  width: 26px;
+  margin-left: 7px;
+  transform: scaleY(-1);
+}
+
+/*Styling for a section break image, scales with object-fit*/
+.disc-alg img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/*Styling for a section break image, scales with object-fit*/
+.entertainment img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/*Layout for homepage content*/
+.home-cont{
+  padding: 30px 0;
+  width: 80%;
+  margin: auto;
+}
+
+/*The following section defines space between content elements*/
+.home-cont h2{
+  margin-bottom: 10px;
+}
+
+.home-cont h3{
+  margin-bottom: 10px;
+}
+
+.home-cont p{
+  margin-bottom: 20px;
+}
+
+/*Styling for homepage main content buttons*/
+.home-cont button{
+  background-color: var(--accent-green);
+  border: none;
+  width: 49%;
+  color: var(--white-font);
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  border-radius: 40px;
+  padding: 10px 0; 
+  box-shadow: 0 10px 20px -5px var(--drop-shadow);
+  margin-left: 51%;
+}
+
+/*Styling for the section break element*/
+.pres-back{
+  background-color: var(--accent-gray);
+  padding: 30px 0;
+}
+
+/*Rounded image of student president*/
+.president img{
+  display: block;
+  border: 5px solid white;
+  border-radius: 50%;
+  width: 175px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+/*Section break text element stylings*/
+.president h3{
+  text-align: center;
+  display: block;
+  width: 178px;
+  margin: auto;
+}
+
+.president p{
+  display: block;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+/*Styling for footer*/
+footer{
+  background-color: var(--accent-gray);
+  padding: 32px 0;
+  position: relative;
+}
+
+/*Positioning back to top button on right side*/
+.top{
+  position: absolute;
+  right: 20px;
+  top: 45px;
+}
+
+/*Styling for footer text elements*/
+.top p{
+  font-size: 9px;
+  line-height: 10px;
+  color: var(--white-font);
+}
+
+footer h3{
+  text-align: center;
+}
+
+/*Centering footer social links block*/
+.social-section{
+  width: 38%;
+  margin: auto;
+}
+
+/*Creating a row of social icons*/
+.socials{
+  display: flex;
+  justify-content: space-between;
+  max-width: 142px;
+  margin: auto;
+}
+
+/*Setting the size of the back to top arrow*/
+.top img{
+  width: 22px;
+  margin-left: 13px;
+}
+
+/*About page specific styles begin -------------------------------------------------------------------------*/
+
+/*Construction image layout*/
+.const-img{
+  width: 100%;
+  margin: auto;
+  margin-top: 15px;
+}
+
+/*Setting slightly darker background for main content section*/
+.about-section{
+  background-color: var(--white-font);
+}
+
+/*Styling for section break image, scales with content-fit, adds green tint*/
+.about-section img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+}
+
+/*Created to add a green tint to section break images*/
+.multiply-layer{
+  height: 200px;
+  background-color: var(--accent-green);
+  position: relative;
+}
+
+/*Text styling for section break image overlay text*/
+.cent-txt{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Raleway', sans-serif;
+  color: var(--white-font);
+  font-size: 50px;
+  line-height: 80px;
+  font-weight: 700;
+}
+
+/*Layout for about content section*/
+.about-content{
+  width: 80%;
+  margin: auto;
+  padding-top: 25px;
+}
+
+/*Spacing for about content text section*/
+.about-content h2{
+  margin-bottom: 15px;
+}
+
+.about-content p{
+  padding-bottom: 20px;
+}
+
+/*Styling for section break image, scales with content-fit, adds green tint*/
+.multiply-layer img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+}
+
+/*Layout for secondary about content sections*/
+.about-format{
+  width: 80%;
+  margin: auto;
+  padding: 25px 0;
+}
+
+/*Spacing for secondary about content text sections*/
+.about-format h2, .about-format h3{
+  margin-bottom: 10px;
+}
+
+/*Darker background colour for alternating sections*/
+.gray-back{
+  background-color: var(--white-font);
+}
+
+/*Background colour for section break subscription area*/
+.subscribe{
+  background-color: var(--accent-gray);
+}
+
+/*Layout for section break*/
+.sub-format{
+  width: 81%;
+  margin: auto;
+  padding: 24px 0;
+}
+
+/*Text centered for section break*/
+.sub-format h5{
+  text-align: center;
+}
+
+/*Styling for section break button*/
+.sub-format button{
+  background-color: var(--accent-green);
+  border: none;
+  width: 46%;
+  color: var(--white-font);
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  border-radius: 40px;
+  padding: 10px 0;
+  margin-left: 27%;
+  margin-top: 17px;
+}
+
+/*Layout for sponsors section*/
+.thanks{
+  width: 80%;
+  margin: auto;
+  padding: 30px 0;
+}
+
+/*Centering sponsor text*/
+.thanks h1{
+  text-align: center;
+}
+
+/*Layout for flexbox of company logos*/
+.companies{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.companies img{
+  margin-bottom: 44px;
+}
+
+/*Setting fixed widths for company logos*/
+.stu-asso{
+  width: 300px;
+}
+
+.al-col{
+  width: 200px;
+}
+
+.pcl{
+  width: 220px;
+}
+
+.cibc{
+  width: 152px;
+}
+
+/*Hide mobile images*/
+.toggle-img{
+  display: none;
+}
+
+/*Contact specific styles ----------------------------------------------------------------------------------*/ 
+
+/*Sizing for contact page banner image*/
+.contact-img{
+  width: 100%;
+  margin: auto;
+  margin: 15px 0;
+}
+
+/*Styling for contact form*/
+.contact-form{
+  background-color: var(--accent-green);
+  border-radius: 25px;
+  padding: 20px 15.5px;
+}
+
+/*Space after contact for h1*/
+.contact-form h1{
+  margin-bottom: 10px;
+}
+
+/*Text styling and layout for contact form labels*/
+label{
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  color: var(--white-font);
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 5px;
+}
+
+/*Text styling and layout for contact form input boxes*/
+input{
+  border: none;
+  border-radius: 72px;
+  padding: 10px 0 10px 10px;
+  margin-bottom: 15px;
+  font-family: 'Raleway', sans-serif;
+  color: var(--accent-gray);
+  font-size: 16px;
+  line-height: 19px;
+  width: 100%;
+}
+
+/*Text styling and layout for contact form textarea*/
+textarea{
+  border: none;
+  border-radius: 10px;
+  padding: 10px 0 10px 10px;
+  margin-bottom: 20px;
+  font-family: 'Raleway', sans-serif;
+  color: var(--accent-gray);
+  font-size: 16px;
+  line-height: 19px;
+  width: 100%;
+  max-width: 100%;
+  height: 100px;
+}
+
+/*Styling for contact form button*/
+.contact-form button{
+  background-color: var(--accent-gray);
+  border: none;
+  width: 100%;
+  color: var(--white-font);
+  font-family: 'Raleway', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 37px;
+  border-radius: 40px;
+  padding: 6px 0;
+  box-shadow: 0 10px 20px -5px var(--drop-shadow);
+}
+
+/*Layout for contact location text info*/
+.location-content{
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+/*Setting size for embedded google map*/
+iframe{
+  width: 100%;
+  height: 250px;
+}
+
+/*Tablet breakpoint-------------------------------------------------------------------------------------------*/
+@media (min-width: 700px){
+
+  /*Updates to navbar styling, now uses horizontal layout*/
+  .top-nav{
+    width: 80%;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+
+  .top-nav img{
+    margin-right: 33%;
+  }
+
+  .top-nav a{
+    margin-top: 0;
+  }
+
+  /*Updating font sizes*/
+  h1{
+    font-size: 72px;
+    line-height: 85px;
+  }
+  
+  h2{
+    font-size: 40px;
+    line-height: 47px;
+  }
+  
+  h3{
+    font-size: 32px;
+    line-height: 37px;
+  }
+  
+  h5{
+    font-size: 24px;
+    line-height: 35px;
+  }
+  
+  h6{
+    font-size: 24px;
+    line-height: 29px;
+  }
+  
+  p{
+    font-size: 18px; 
+    line-height: 35px;
+  }
+
+  /*Changing rec icons to single row*/
+  .rec-icons{
+    max-width: none;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  
+  .bowling{
+    width: 60px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .rclimb{
+    width: 108px;
+  }
+  
+  .fitico{
+    width: 106px;
+    margin-top: 0;
+  }
+  
+  .court{
+    width: 93px;
+    margin-right: 0;
+    margin-top: 0;
+  }
+
+  /*Updating get started button*/
+  .start{
+    display: block;
+    width: 50%;
+    margin: auto;
+    font-size: 40px;
+    line-height: 47px;
+    padding: 9px 0;
+  }
+
+  /*Updating size of banner image*/
+  .disc-img{
+    display: block;
+    width: 59%;
+  }
+
+  /*Make scroll arrow visible*/
+  .scroll-arrow{
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  /*Updating styling for homepage buttons*/
+  .home-cont button{
+    width: 38%;
+    font-size: 27px;
+    line-height: 31px;
+    padding: 7px 0; 
+    margin-left: 62%;
+  }
+
+  /*Changing homepage section break to grid layout*/
+  .president{
+    display: grid;
+    grid-template-columns: 30% 61%;
+    grid-gap: 9%;
+    width: 80%;
+    margin: auto;
+  }
+
+  .president p{
+    width: 100%;
+    font-size: 24px;
+    line-height: 35px;
+  }
+
+  .president h3{
+    font-size: 24px;
+    line-height: 35px;
+  }
+
+  /*About page elements-------------------------------------------------------------------------------------*/
+  
+  /*Top image resize*/
+  .const-img{
+    width: 93%;
+  }
+
+   /*Make body images visible*/
+  .toggle-img{
+    display: block;
+  }
+
+   /*Make content sections into grids*/
+  .left-format{
+    display: grid;
+    grid-template-columns: 36% 61%;
+    grid-gap: 3%;
+  }
+
+  .right-format{
+    display: grid;
+    grid-template-columns: 61% 36%;
+    grid-gap: 3%;
+  }
+
+  .about-format img{
+    height: 375px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /*Updating section break layout*/
+  .sub-format{
+    width: 81%;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .sub-format h5{
+    text-align: left;
+    padding-top: 5px;
+  }
+  
+  .sub-format button{
+    width: 23%;
+    font-size: 24px;
+    line-height: 29px;
+    padding: 8px 0;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .stu-asso{
+    width: 435px;
+  }
+
+  /*Contact page updates-------------------------------------------------------------------------------------------*/
+
+  .contact-img{
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  /*Updating contact form styles*/
+  .contact-form{
+    padding: 30px 46px;
+  }
+
+  .contact-form h1{
+    margin-bottom: 25px;
+  }
+
+  label{
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 20px;
+  }
+
+  input{
+    padding: 15px 0 15px 34px;
+  }
+
+  textarea{
+    padding: 15px 0 15px 34px;
+    height: 148px;
+  }
+
+  .contact-form button{
+    width: 35%;
+    margin-left: 65%;
+    font-size: 40px;
+    line-height: 47px;
+    padding: 9px 0;
+  }
+  
+  /*Update google map height*/
+  iframe{
+    height: 958px;
+  }
+
+}
+
+/*Desktop breakpoint-------------------------------------------------------------------------------------------*/
+@media (min-width: 1500px){
+  
+  /*Navbar spacing adjustments*/
+  .top-nav{
+    width: 85%;
+  }
+
+  .top-nav img{
+    margin-right: 68%;
+  }
+
+  /*Top banner grid created and banner elements updated*/
+  .banner{
+    display: grid;
+    grid-template-columns: 33% 58%;
+    grid-gap: 9%;
+  }
+
+  .top-content h1{
+    margin-bottom: 65px;
+  }
+
+  .top-content h6{
+    margin-bottom: 65px;
+  }
+
+  .rec-icons{
+    margin-bottom: 65px;
+  }
+
+  .start{
+    width: 64%;
+    margin: 0;
+    font-size: 40px;
+    line-height: 47px;
+    padding: 9px 0;
+  }
+
+  .disc-img{
+    width: 100%;
+  }
+
+  /*Content grid created*/
+  .disc-alg{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 49.5% 49.5%;
+    grid-gap: 1%;
+  }
+
+  .disc-alg img{
+    width: 100%;
+    height: 337px;
+    object-fit: cover;
+  }
+
+  .discover-back{
+    background-color: var(--white-font);
+    padding: 81px 0;
+  }
+
+  .home-cont{
+    width: 100%;
+    padding: 0;
+  }
+
+  .home-cont p{
+    margin-bottom: 70px;
+  }
+
+  /*Adjust section break to 3 column grid*/ 
+  .president{
+    display: grid;
+    grid-template-columns: 27% 66%;
+    grid-gap: 7%;
+  }
+
+  .grid-outer{
+    display: grid;
+    grid-template-columns: 38% 38%;
+    grid-gap: 24%;
+  }
+
+  .president img{
+    margin-bottom: 0;
+  }
+
+  .president .h3-margin-add{
+    margin-top: 65px;
+  }
+
+  /*Made entertianment section into grid*/
+  .entertainment{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 49.5% 49.5%;
+    grid-gap: 1%;
+    padding: 81px 0;
+  }
+
+  .entertainment img{
+    width: 100%;
+    height: 337px;
+    object-fit: cover;
+  }
+
+  /*Increasing size of back to top button*/
+  .top{
+    top: 30px;
+  }
+
+  .top p{
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .top img{
+    width: 50px;
+  }
+
+  /*About section updates*/
+
+}

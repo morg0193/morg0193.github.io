@@ -4,61 +4,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/meyer-reset.css">
   <link rel="stylesheet" href="css/style.css">
   <title>ARC - Home</title>
 </head>
 
 <body>
-  <img src="images/logo.svg" alt="ARC Logo">
-  <nav>
-    <a href="">Home</a>
-    <a href="">About</a>
-    <a href="">Contact</a>
-  </nav>
+  <div class="nav-back">
+    <div class="top-nav">
+      <img src="images/logo.svg" alt="ARC Logo">
+      <a href="index.html" class="active-link">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>  
+  </div>
   <div class="banner">
     <div class="top-content">
       <h1>Discover Your ARC.</h1>
-      <p>With Algonquin College's newest facility, there's always something for everyone to discover and enjoy!</p>
-      <!--Icons go here-->
-      <button class="green large">Get Started</button>
+      <h6>With Algonquin College's newest facility, there's always something for everyone to discover and enjoy!</h6>
+      <div class="rec-icons">
+        <img src="icons/bowling.svg" class="bowling" alt="Bowling Ball Icon">
+        <img src="icons/rockclimb.svg" class="rclimb" alt="Rock Climbing Icon">
+        <img src="icons/fitness.svg" class="fitico" alt="Fitness Center Icon">
+        <img src="icons/court.svg" class="court" alt="Indoor Court Icon">
+      </div>
+      <button class="start">Get Started</button>
     </div>
-    <picture>
-      <img src="images/discover.svg" alt="Illustration of girl reading book while sitting on books">
-    </picture>
+    <img src="images/discover.svg" alt="Illustration of girl reading book while sitting on books" class="disc-img">
   </div>
-  <div class="disc-alg">
-    <picture>
-      <img src="images/school.jpg" alt="Graduates throwing hats">
-    </picture>
-    <h2>Discover.</h2>
-    <h3>Algonquin College</h3>
-    <p class="italics">of Applied Arts and Technology is a publicly funded English-language college located in Ottawa,
-      Ontario, Canada. The college serves the National Capital Region and the outlying areas of Eastern Ontario, Western
-      Quebec, and Upstate New York.</p>
-    <button class="green small">Learn More</button>
+  <a href="#scroll-point">
+    <div class="scroll-arrow">
+    <p>scroll</p>
+    <img src="icons/arrow.svg" alt="Scroll down">
+    </div>
+  </a>
+  <div class="discover-back">
+    <div class="disc-alg" id="scroll-point">
+      <picture>
+        <source srcset="images/school-375_x_249.jpg 375w" media="(max-width: 500px)">
+        <source srcset="images/school-768_x_510.jpg 768w">
+        <img src="images/school.jpg" alt="Graduates throwing hats">
+      </picture>
+      <div class="home-cont"> 
+        <h2 class="semi-b ital">Discover.</h2>
+        <h3>Algonquin College</h3>
+        <p>of Applied Arts and Technology is a publicly funded English-language college located in Ottawa,
+          Ontario, Canada. The college serves the National Capital Region and the outlying areas of Eastern Ontario, Western
+          Quebec, and Upstate New York.</p>
+        <button>Learn More</button>
+      </div>
+    </div>
   </div>
-  <div class="president">
-    <img src="images/simon.jpg" alt="Smiling student">
-    <h3 class="white">Dijanelle Simon SA President</h3>
-    <p>"Only with increased capacity can we expand and create a more inclusive program that attracts a greater number of
-      students to participate in physical and social activity. The Students' Association is committed to and focused on
-      programming that results in our students taking person ownership for their health."</p>
+  <div class="pres-back">
+    <div class="president">
+      <div class="grid-outer">
+        <img src="images/simon-200_x_200.jpg" alt="Smiling student">
+        <div class="grid-inner">
+          <h3 class="semi-b light-txt h3-margin-add">Dijanelle Simon</h3>
+          <h3 class="semi-b light-txt">SA President</h3>
+        </div>
+      </div>
+      <p class="light-txt">"Only with increased capacity can we expand and create a more inclusive program that attracts a greater number of
+        students to participate in physical and social activity. The Students' Association is committed to and focused on
+        programming that results in our students taking person ownership for their health."</p>
+    </div>
   </div>
   <div class="entertainment">
     <picture>
+      <source srcset="images/entertainment-375_x_250.jpg 375w" media="(max-width: 500px)">
+      <source srcset="images/entertainment-768_x_512.jpg 768w">
       <img src="images/entertainment.jpg" alt="Students drinking together">
     </picture>
-    <h2>Discover.</h2>
-    <h3>The entertainment</h3>
-    <p class="italics">at Algonquin College is endless. We currently have the Algonquin Commons Theatre where we host a
-      variety of events. Now with the coming of the ARC facility, not only will it be providing more space for the
-      students to study, but it will also be bringing in more room for late-night entertainment.</p>
-    <button class="green small">Learn More</button>
+    <div class="home-cont">
+      <h2 class="semi-b ital">Discover.</h2>
+      <h3>The entertainment</h3>
+      <p>at Algonquin College is endless. We currently have the Algonquin Commons Theatre where we host a
+        variety of events. Now with the coming of the ARC facility, not only will it be providing more space for the
+        students to study, but it will also be bringing in more room for late-night entertainment.</p>
+      <button>Learn More</button>
+    </div>
   </div>
   <footer>
-    <h3 class="white">Follow Us</h3>
-    <!--Social Media Icons Go Here-->
-    <!--Back to top button-->
+    <div class="social-section">
+      <h3 class="light-txt">Follow Us</h3>
+      <div class="socials">
+        <a href="https://www.facebook.com"><img src="icons/facebook.svg" alt="Facebook"></a>
+        <a href="https://www.instagram.com"><img src="icons/instagram.svg" alt="Instagram"></a>
+        <a href="https://www.twitter.com"><img src="icons/twitter.svg" alt="Twitter"></a>
+        <a href="https://www.youtube.com"><img src="icons/youtube.svg" alt="Youtube"></a>
+      </div>
+    </div>
+    <a href="#">
+      <div class="top">
+        <img src="icons/arrow.svg" alt="Back to top">
+        <p>back to top</p>
+      </div>
+    </a>
   </footer>
 
 </body>

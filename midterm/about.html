@@ -4,50 +4,144 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/meyer-reset.css">
   <link rel="stylesheet" href="css/style.css">
   <title>ARC - About</title>
 </head>
 
 <body>
-  <img src="images/logo.svg" alt="ARC Logo">
-  <nav>
-    <a href="">Home</a>
-    <a href="">About</a>
-    <a href="">Contact</a>
-  </nav>
-  <div class="about-banner">
+  <div class="nav-back">
+    <div class="top-nav">
+      <img src="images/logo.svg" alt="ARC Logo">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active-link">About</a>
+      <a href="contact.html">Contact</a>
+    </div>  
+  </div> 
+  <div class="banner">
     <div class="banner-content">
-      <h1></h1>
-      <p></p>
+      <h1>What to expect during construction.</h1>
+      <h6>With construction starting in April 2019 we anticipate the new arrival of the ARC building as early as August 2021.</h6>
+      <h6>The current SA Fitness Zone and gym will be operating and open as usual. Please visit the Fitness Zone and the Gymnasium for more information on the hours, offerings, and pricing.</h6>
     </div>
-    <picture>
-      <img src="images/construction.svg" alt="Illustration of construction work">
-    </picture>
+    <img src="images/construction.svg" alt="Illustration of construction work" class="const-img">
   </div>
-  <picture>
-    <img src="images/about.jpg" alt="Building interior">
-  </picture>
-  <div class="about-content">
-    <h2 class="bi"></h2>
-    <p class="reg"></p>
-    <h2 class="bi"></h2>
-    <p class="reg"></p>
-    <h2 class="bi"></h2>
-    <p class="reg"></p>
+  <div class="about-section">
+    <div class="multiply-layer">
+      <picture>
+        <source srcset="images/about-375_x_250.jpg 375w" media="(max-width: 500px)">
+        <source srcset="images/about-768_x_512.jpg 768w" media="(max-width: 999px)">
+        <source srcset="images/about-1280_x_853.jpg 1280w" media="(max-width: 1399px)">
+        <source srcset="images/about-1920_x_1280.jpg 1920w" media="(min-width: 1400px)">
+        <img src="images/about.jpg" alt="Building interior">
+      </picture>
+      <div class="cent-txt">About</div>
+    </div>
+    <div class="about-content">
+      <h2 class="bolded ital">Who</h2>
+      <p>is ARC? We are the Athletics & Recreation Centre. This is an exciting venture for our Algonquin Community.  This facility will provide our students with a place to break through perceptual barriers in a welcoming, safe, inclusive and inviting environment for students of all backgrounds, cultures and abilities to spark a movement.</p>
+      <h2 class="bolded ital">What</h2>
+      <p>is this going to cost me? This facility will be included in your activity fee. All fee-paying students can use and participate in all activities in the building. As for the facility, it will cost Algonquin College $48.8 million.</p>
+      <h2 class="bolded ital">Where</h2>
+      <p>will the ARC building be? The ARC building will be located northeast of the Student Commons building, opposite of the residence. The facility will be an estimated 100,000 square feet! Connected to the Student Commons by a "Plus 15" Pedestrian Link. </p>
+    </div>
   </div>
-  <picture>
-    <img src="images/services.jpg" alt="Hands holding decorative coffee">
-  </picture>
-  <div class="restuarant"></div>
-  <div class="bowling"></div>
-  <div class="subscribe"></div>
-  <div class="fitness"></div>
-  <div class="rock-climb"></div>
-  <div class="thanks"></div>
+  <div class="services-section">
+    <div class="multiply-layer">
+      <picture>
+        <source srcset="images/services-375_x_250.jpg 375w" media="(max-width: 500px)">
+        <source srcset="images/services-768_x_512.jpg 768w" media="(max-width: 999px)">
+        <source srcset="images/services-1280_x_853.jpg 1280w" media="(max-width: 1399px)">
+        <source srcset="images/services-1920_x_1280.jpg 1920w" media="(min-width: 1400px)">
+        <img src="images/services.jpg" alt="Hands holding decorative coffee">
+      </picture>
+      <div class="cent-txt">Services</div>
+    </div>
+    <div class="about-format left-format">
+      <picture>
+        <source srcset="images/bar-500_x_375.jpg 500w" media="(max-width: 999px)">
+        <source srcset="images/bar-813_x_609.jpg 813w">
+        <img src="images/bar.jpg" alt="Restaurant Bar" class="toggle-img">
+      </picture>
+      <div class="about-txt-format">
+        <h2 class="bolded">Need a break?</h2>
+        <h3>Restaurant & Lounge </h3>
+        <p>will have full service throughout the day. Why not come in after a long day of class and order one of our famous poutines. Finished with your food and drink? Why not try out the new billiards area. Grab some friends and dominate them in some pool. Pool, not your thing? Then come on downstairs and try out the new bowling lanes! </p>
+      </div>
+    </div>
+    <div class="gray-back">
+      <div class="about-format right-format">
+        <div class="about-txt-format">
+          <h2 class="bolded">Competitive Friends?</h2>
+          <h3>Bowling lanes</h3>
+          <p>are finally here. Grab your friends and book a lane at the Students’ Association Bowling Lanes that will be part of the upcoming ARC! Don't like bowling? Well, look no further. Practice your swing no matter the weather on the Golf Simulator that will be located in the ARC building.</p>
+        </div>
+        <picture>
+          <source srcset="images/bowling-515_x_375.jpg 515w" media="(max-width: 999px)">
+          <source srcset="images/bowling-813_x_591.jpg 813w">
+          <img src="images/bowling.jpg" alt="Bowling Alley" class="toggle-img">
+        </picture>
+      </div>
+    </div>
+    <div class="subscribe">
+      <div class="sub-format">
+        <h5>Keep up to date with our news letter</h5>
+        <button>Subscribe</button>
+      </div>
+    </div>
+    <div class="about-format left-format">
+      <picture>
+        <source srcset="images/fitness-562_x_375.jpg 562w" media="(max-width: 999px)">
+        <source srcset="images/fitness-813_x_542.jpg 813w">
+        <img src="images/fitness.jpg" alt="Weightliifting" class="toggle-img">
+      </picture>
+      <div class="about-txt-format">
+        <h2 class="bolded">New year, new me.</h2>
+        <h3>Fitness rooms</h3>
+        <p>Cardio equipment, free weights, selectorized weight equipment and stretching areas will be located in strategically placed locations to best suit your work-out routine. Indoor walking/running track that will test your endurance with inclines and declines that weave around fitness nods, the gymnasiums and the lounge area.</p>
+      </div>
+    </div>
+    <div class="gray-back">
+      <div class="about-format right-format">
+        <div class="about-txt-format">
+          <h2 class="bolded">Indoor climbing?</h2>
+          <h3>Rock climbing</h3>
+          <p>Test your strength and flexibility on the rock-climbing wall. Add some variety to your fitness routine, the ARC will be able to offer more yoga and fitness classes to fit into your busy schedule. After a busy day of rock climbing or yoga, come and enjoy our new massage therapy area. </p>
+        </div>
+        <picture>
+          <source srcset="images/climbing-610_x_375.jpg 610w" media="(max-width: 999px)">
+          <source srcset="images/climbing-813_x_500.jpg 813w">
+          <img src="images/climbing.jpg" alt="Indoor Rock Climbing" class="toggle-img">
+        </picture>
+      </div>
+    </div>
+  </div>
+  <div class="thanks">
+    <h1 class="xl">Special thank you to the following</h1>
+    <div class="companies">
+      <img src="images/sa-435_x_125.png" alt="Algonquin Students' Association" class="stu-asso">
+      <img src="images/AC_ICON_FC_GRN_240x200.png" alt="Algonquin College" class="al-col">
+      <img src="images/pcl-220_x_154.png" alt="PCL" class="pcl">
+      <img src="images/cibc-152_x_138.png" alt="CIBC" class="cibc">
+    </div>
+  </div>
   <footer>
-    <h3 class="white">Follow Us</h3>
-    <!--Social Media Icons Go Here-->
-    <!--Back to top button-->
+    <div></div>
+    <div class="social-section">
+      <h3 class="light-txt">Follow Us</h3>
+      <div class="socials">
+        <a href="https://www.facebook.com"><img src="icons/facebook.svg" alt="Facebook"></a>
+        <a href="https://www.instagram.com"><img src="icons/instagram.svg" alt="Instagram"></a>
+        <a href="https://www.twitter.com"><img src="icons/twitter.svg" alt="Twitter"></a>
+        <a href="https://www.youtube.com"><img src="icons/youtube.svg" alt="Youtube"></a>
+      </div>
+    </div>
+    <a href="#">
+      <div class="top">
+        <img src="icons/arrow.svg" alt="Back to top">
+        <p>back to top</p>
+      </div>
+    </a>
   </footer>
 
 </body>
