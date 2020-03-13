@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <!--Top navbar-->
   <div class="nav-back">
     <div class="top-nav">
       <img src="images/logo.svg" alt="ARC Logo">
@@ -18,12 +19,16 @@
       <a href="contact.html" class="active-link">Contact</a>
     </div>  
   </div>
-  <div class="banner">
-    <div class="contact-main">
-      <h1>We Want to Hear From You</h1>
-      <h6>If you have an idea for an activity that you think you and your fellow students would love to participate in that we are not already offering, we want to know about it!</h6>
+  <!--Banner content-->
+  <div class="banner wipe-ani" id="grid-adjust">
+    <div class="grid-wrapper">
+      <div class="contact-main">
+        <h1>We Want to Hear From You</h1>
+        <h6>If you have an idea for an activity that you think you and your fellow students would love to participate in that we are not already offering, we want to know about it!</h6>
+      </div>
+      <img src="images/contact-img.svg" alt="Contact Illustration" class="contact-img">
     </div>
-    <img src="images/contact-img.svg" alt="Contact Illustration" class="contact-img">
+    <!--Contact form-->
     <form class="contact-form">
       <h1 class="light-txt">Contact Us.</h1>
       <label for="fname">Full Name</label>
@@ -42,9 +47,10 @@
       <br>
       <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
       <br>
-      <button>Submit</button>
+      <button class="hover-states">Submit</button>
     </form>
   </div>
+  <!--Main content section-->
   <div class="location-layout">
     <div class="location-content">
       <h1>Our Location.</h1>
@@ -55,8 +61,10 @@
       <p>K2G 1V8</p>
       <p>(613) 727-4723 x7711</p>
     </div>
+    <!--Embedded google map-->
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15862.564391671682!2d-75.76710814960711!3d45.346153426425936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College!5e0!3m2!1sen!2sca!4v1583716514315!5m2!1sen!2sca" style="border:0;" allowfullscreen=""></iframe>
-  </div>  
+  </div>
+  <!--Page footer-->  
   <footer>
     <div></div>
     <div class="social-section">
@@ -69,7 +77,7 @@
       </div>
     </div>
     <a href="#">
-      <div class="top">
+      <div class="top hover-states">
         <img src="icons/arrow.svg" alt="Back to top">
         <p>back to top</p>
       </div>

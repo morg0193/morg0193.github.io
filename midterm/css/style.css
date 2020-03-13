@@ -1,5 +1,18 @@
+/*NOTE: CSS VALIDATOR GIVES 39 ERRORS WHEN CODE IS PASTED IN. ALL ERRORS ARE FOR DEFINED VARIABLES THAT THE VALIDATOR CANNOT PARSE*/
+
 /*Import font*/
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap');
+
+@keyframes wiperight{
+  0%{
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
 /*Set reusable colours*/
 :root{
@@ -18,6 +31,25 @@
 html{
   scroll-behavior: smooth;
 }
+
+/*Page animations-------------------------------------------------------------------------------------------*/
+
+/*Animation for buttons*/
+.hover-states:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.hover-states:active{
+  transform: translateY(-1px);
+}
+
+/*Banner animation, a fade in from the left to the right*/
+.wipe-ani{
+  animation: wiperight 2s ease-in-out  1;
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
 
 .nav-back{
   background-color: var(--accent-gray);
@@ -637,6 +669,11 @@ iframe{
     line-height: 35px;
   }
 
+  /*Add space under navbar*/
+  .banner{
+    padding-top: 80px;
+  }
+
   /*Changing rec icons to single row*/
   .rec-icons{
     max-width: none;
@@ -729,6 +766,15 @@ iframe{
     display: block;
   }
 
+  /*Added padding for about content section*/
+  .about-content{
+    padding: 30px 0;
+  }
+
+  .about-format{
+    padding: 50px 0;
+  }
+
    /*Make content sections into grids*/
   .left-format{
     display: grid;
@@ -754,12 +800,13 @@ iframe{
     margin: auto;
     padding: 15px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
   
   .sub-format h5{
     text-align: left;
     padding-top: 5px;
+    margin-right: 5%;
   }
   
   .sub-format button{
@@ -839,6 +886,7 @@ iframe{
     display: grid;
     grid-template-columns: 33% 58%;
     grid-gap: 9%;
+    padding-top: 162px;
   }
 
   .top-content h1{
@@ -945,6 +993,106 @@ iframe{
     width: 50px;
   }
 
-  /*About section updates*/
+  /*About section updates----------------------------------------------------------------------------------------*/
 
+  /*Added space below banner*/
+  .banner-content{
+    padding-bottom: 162px;
+  }
+
+  /*Grid layout changes for about grid*/
+  #about-banner{
+    display: grid;
+    grid-template-columns: 49.5% 50%;
+    grid-gap: 0.5%;
+  }
+
+  /*Created grid for about section*/
+  .about-content{
+    padding: 225px 0;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 5%;
+  }
+
+  /*Changing about sections to a new grid format*/
+  .about-format{
+    padding: 83px 0;
+  }
+
+  .about-format img{
+    height: 337px;
+    object-fit: cover;
+  }
+
+  .left-format{
+    grid-template-columns: 49.5% 49.5%;
+    grid-gap: 1%;
+  }
+
+  .right-format{
+    grid-template-columns: 49.5% 49.5%;
+    grid-gap: 1%;
+  }
+
+  /*Update style and sizing of section break*/
+  .sub-format h5{
+    font-size: 40px;
+    line-height: 35px;
+    margin-right: 1%;
+  }
+
+  .sub-format button{
+    width: 14%;
+    font-size: 27px;
+    line-height: 31px;
+  }
+
+  /*Updating company sponsor section*/
+  .xl{
+    font-size: 72px;
+    line-height: 85px;
+    width: 625px;
+    margin: auto;
+    margin-bottom: 83px;
+  }
+
+  .thanks{
+    padding: 139px 0;
+  }
+
+  /*Changing flex direction of company logos*/
+  .companies{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  /*Contact page specific changes------------------------------------------------------------------------------*/
+
+  /*Grid layout changes for contact grid*/
+  #grid-adjust{
+    display: grid;
+    grid-template-columns: 58% 38%;
+    grid-gap: 4%;
+  }
+
+  /*Width adjustment to contact form button so text does not clip*/
+  .contact-form button{
+    width: 45%;
+    margin-left: 55%;
+  }
+
+  /*Setting up the lower page grid*/
+  .location-layout{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 49.5% 49.5%;
+    grid-gap: 1%;
+    margin: 143px auto;
+  }
+
+  iframe{
+    width: 100%;
+    height: 500px;
+  }
 }
