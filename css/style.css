@@ -1,0 +1,743 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Merriweather:wght@300;400&display=swap');
+
+.navbar-brand img{
+    width: 31px;
+    height: 31px;
+}
+
+.navbar-nav a, .navbar-nav .dropdown{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+header{
+    background-color: #5D576B;
+    overflow: hidden;
+}
+
+.head-back{
+    width: 145%;
+    height: auto;
+    margin-left: -22.5%;
+}
+
+.info-area{
+    width: 75%;
+    max-width: 280px;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.info-area button{
+    display: block;
+    background-color: #ED6A5A;
+    color: white;
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    border-radius: 10px;
+    border: none;
+    padding: 12px 0;
+    width: 59%;
+    margin: 30px auto;
+}
+
+.info-area h1{
+    margin: 7px 0;
+}
+
+.webdd{
+    background-color: #478597;
+    height: 350px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.webdd img{
+    position: absolute;
+    right: -225px;
+    height: 350px;
+    width: auto;
+    mix-blend-mode: overlay;
+}
+
+.webdd h2, .photov h2, .aboutm h2{
+    padding-top: 270px;
+    padding-left: 47px;
+}
+
+.photov{
+    background-color: #D7D0E7;
+    height: 350px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.photov img{
+    position: absolute;
+    right: -330px;
+    top: 15px;
+    height: 350px;
+    width: auto;
+    mix-blend-mode: color-burn;
+}
+
+.aboutm{
+    background-color: #9BC1BC;
+    height: 350px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: -2;
+}
+
+.aboutm img{
+    position: absolute;
+    right: -30px;
+    top: 15px;
+    height: 350px;
+    width: auto;
+    mix-blend-mode: darken;
+    z-index: -1;
+}
+
+footer{
+    background-color: #5D576B;
+    padding: 15px 0;
+}
+
+.socials{
+    display: flex;
+    justify-content: space-between;
+    max-width: 165px;
+    margin: auto;
+}
+
+footer img{
+    width: 20px;
+    height: 20px;
+}
+
+h1{
+    font-family: 'Cabin', sans-serif;
+    font-size: 35px;
+    line-height: 43px;
+    color: white;
+    margin-bottom: 0;
+    font-weight: 700; 
+}
+
+.hidesmall{
+    display: none;
+}
+
+.hidebig{
+    display: block;
+}
+
+h2{
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    color: white;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+.under{
+    text-align: center;
+    text-decoration: underline;
+    padding: 25px 0;
+}
+
+.centered{
+    text-align: center;
+}
+
+h3{
+    font-family: 'Cabin', sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    color: white;
+    margin-bottom: 0;
+}
+
+h4{
+    font-family: 'Merriweather', serif;
+    font-size: 9px;
+    line-height: 11px;
+    color: white;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+h5{
+    font-family: 'Cabin', sans-serif;
+    font-size: 9px;
+    line-height: 11px;
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+    padding-top: 3px;
+    padding-bottom: 22px;
+}
+
+h6{
+    font-family: 'Cabin', sans-serif;
+    font-size: 7px;
+    line-height: 9px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+p{
+    font-family: 'Merriweather', serif;
+    font-size: 12px;
+    line-height: 20px;
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+/*About specific styles*/
+
+.about-back{
+    background-color: #9BC1BC;
+}
+
+#rounded{
+    display: block;
+    border-radius: 50%;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+/*Projects specific styles*/
+
+.projects-back{
+    background-color: #478597;
+}
+
+.proj-img{
+    width: 100%;
+    padding-bottom: 25px;
+}
+
+/*Photo specific*/
+
+.photo-back{
+    background-color: #D7D0E7;
+}
+
+.carousel{
+    padding-bottom: 60px;
+}
+
+iframe{
+    width: 100%;
+    height: calc(100vw * 0.5625);
+    margin-bottom: 60px;
+}
+
+.gallery{
+    display: none;
+}
+
+/*Contact specific*/
+
+.contact-back{
+    background-color: #AEA8BA;
+}
+
+.contact-form-area{
+    background-image: url(../img/map.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #AEA8BA;
+    height: 650px;
+    position: relative;
+}
+
+.contact-fill{
+    background-color: #AEA8BA;
+    mix-blend-mode: multiply;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.contact-form{
+    background-color: #5D576B;
+    padding: 35px 40px;
+    border-radius: 20px;
+    position: absolute;
+    top: 100px;
+    right: 35px;
+    left: 35px;
+}
+
+input{
+    border: 1px solid white;
+    padding: 10px 0 10px 10px;
+    margin-bottom: 20px;
+    font-family: 'Merriweather', serif;
+    color: white;
+    font-size: 10px;
+    line-height: 13px;
+    width: 100%;
+    background: transparent;
+}
+
+::placeholder{
+    color: white;
+}
+  
+textarea{
+    border: 1px solid white;
+    background: transparent;
+    padding: 10px 0 10px 10px;
+    margin-bottom: 20px;
+    font-family: 'Merriweather', serif;
+    color: white;
+    font-size: 10px;
+    line-height: 13px;
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+}
+  
+.contact-form button{
+    background-color: #ED6A5A;
+    border: none;
+    width: 100%;
+    color: white;
+    font-family: 'Cabin', sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    border-radius: 10px;
+    padding: 5px 0;
+}
+
+/*Tablet breakpoint*/
+
+@media (min-width: 600px) {
+
+    .navbar{
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+    .info-area{
+        width: 80%;
+        max-width: none;
+        margin: auto;
+        padding-top: 40px;
+    }
+    
+    .info-area button{
+        font-size: 13px;
+        line-height: 16px;
+        width: 30%;
+        margin: 15px 0;
+        margin-bottom: 0;
+        padding: 7px 0;
+    }
+    
+    .info-area h1{
+        margin: 7px 0;
+    }
+
+    .head-back{
+        width: 65%;
+        margin-left: 35%;
+        margin-top: -9%;
+    }
+    
+    .webdd img{
+        right: 0px;
+        height: 350px;
+    }
+    
+    .webdd h2, .photov h2, .aboutm h2{
+        padding-top: 40px;
+        padding-left: 80px;
+    }
+    
+    .photov img{
+        right: 0px;
+        top: 37px;
+        height: auto;
+        width: 560px;
+    }
+    
+    .aboutm img{
+        right: 30px;
+        top: 15px;
+    }
+
+    .socials{
+        max-width: 310px;
+    }
+
+    footer img{
+        width: 29px;
+        height: 29px;
+    }
+
+    h2{
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .under{
+        font-size: 40px;
+        line-height: 49px;
+    }
+    
+    .centered{
+        font-size: 30px;
+        line-height: 37px;
+    }
+
+    h1{
+        font-size: 40px;
+        line-height: 49px;
+    }
+
+    .hidesmall{
+        display: block;
+    }
+
+    .hidebig{
+        display: none;
+    }
+
+    h3{
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    h4{
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    h5{
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    h6{
+        font-size: 10px;
+        line-height: 13px;
+    }
+
+    p{
+        display: block;
+        margin: auto;
+        text-align: left;
+        width: 80%;
+    }
+
+    #rounded{
+        width: 60%;
+    }
+
+    .carousel{
+        display: none;
+    }
+
+    .gallery{
+        display: block;
+        padding-bottom: 60px;
+    }
+
+    .gallery img{
+        display: block;
+        width: 80%;
+        margin: auto;
+    }
+
+    iframe{
+        display: block;
+        width: 80%;
+        margin: auto;
+    }
+
+    .photo-back{
+        padding-bottom: 60px;
+    }
+
+    .contact-form{
+        display: grid;
+        grid-template-columns: 49% 49%;
+        grid-gap: 2%;
+        padding-bottom: 50px;
+    }
+
+    #sub{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #message{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .contact-form button{
+        width: 50%;
+    }
+}
+
+@media (min-width: 1100px) {
+
+    .navbar{
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    header{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .info-area{
+        margin: auto;
+        padding-top: 0px;
+    }
+    
+    .info-area button{
+        font-size: 30px;
+        line-height: 37px;
+        width: 40%;
+        margin: 15px 0;
+        margin-bottom: 0;
+        padding: 7px 0;
+    }
+
+    .head-back{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    
+    .webdd h2, .photov h2, .aboutm h2{
+        padding-top: 100px;
+        padding-left: 140px;
+    }
+    
+    .webdd{
+        height: 540px;
+    }
+    
+    .webdd img{
+        height: 540px;
+    }
+    
+    .photov{
+        height: 540px;
+    }
+    
+    .photov img{
+        width: 800px;
+        top: 100px;
+    }
+    
+    .aboutm{
+        height: 540px;
+    }
+    
+    .aboutm img{
+        right: 100px;
+        height: 540px;
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 30px 10%;
+    }
+
+    .socials{
+        width: 100%;
+        max-width: 800px;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    footer img{
+        width: 47px;
+        height: 47px;
+    }
+
+    h2{
+        font-size: 60px;
+        line-height: 73px;
+    }
+
+    .under{
+        font-size: 100px;
+        line-height: 122px;
+        padding-bottom: 100px;
+    }
+    
+    .centered{
+        font-size: 40px;
+        line-height: 49px;
+    }
+
+    h1{
+        font-size: 90px;
+        line-height: 110px;
+    }
+
+    .hidesmall{
+        display: none;
+    }
+
+    .hidebig{
+        display: block;
+    }
+
+    h3{
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    h4{
+        font-size: 50px;
+        line-height: 63px;
+        padding-bottom: 20px;
+    }
+
+    h5{
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    h6{
+        font-size: 20px;
+        line-height: 24px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row: 1;
+        text-align: left;
+    }
+
+    p{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .about-grid{
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 43% 54%;
+        grid-gap: 3%;
+        padding-bottom: 100px;
+    }
+
+    .paras{
+        max-height: 800px;
+        overflow: hidden;
+    }
+
+    #rounded{
+        width: 100%;
+    }
+
+    .proj-img{
+        padding-bottom: 80px;
+    }
+
+    .carousel{
+        display: none;
+    }
+
+    .gallery{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .gallery img{
+        width: 100%;
+    }
+
+    .contact-form-area{
+        height: 900px;
+    }
+
+    .contact-form{
+        top: 150px;
+        padding-top: 80px;
+        padding-left: 10%;
+        width: 80%;
+        height: 630px;
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 70px 70px 100px 73px;
+        grid-gap: 10%;
+        margin: auto;
+    }
+
+    #sub{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    #message{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        height: 325px;
+    }
+
+    #email{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        height: 70px;
+    }
+
+    #fname{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        height: 70px;
+    }
+
+    .contact-form button{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        height: 73px;
+        font-size: 30px;
+        line-height: 37px;
+    }
+
+    input, textarea{
+        font-size: 25px;
+        line-height: 32px;
+    }
+
+}
+

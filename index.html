@@ -1,18 +1,90 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Exercise 1</title>
-</head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 
-<body>
-  <p>Jesse Morgenroth-Rebin</p>
-  <p>MTM6201_030</p>
-  <p>morg0193</p>
-  <p>Over the break I was finally able to walk around without my crutches and ankle brace.</p>
-</body>
+    <title>Jesse Morgenroth-Rebin Web Portfolio - Home</title>
+  </head>
+  <body>
+    <!--Top Navbar-->
+    <nav class="navbar navbar-dark navbar-expand-lg" style="background-color: #5D576B;">
+        <div class="container-fluid">
+          <div class="navbar-brand"><a href="index.html"><img src="img/Logo.png" alt="Personal Logo"></a></div>
 
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse-menu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="collapse-menu">
+            <div class="navbar-nav ml-auto">
+              <a class="nav-item nav-link" href='about.html'>About Me</a>
+              <div class="dropdown">
+                <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" id="dropdownButton" href='#' role="button" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownButton">
+                  <a href="projects.html" class="dropdown-item">Web Design & Development</a>
+                  <a href="photo.html" class="dropdown-item">Photography & Videography</a>
+                </div>
+              </div>
+              <a class="nav-item nav-link" href='contact.html'>Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!--Header-->
+      <header>
+        <div class="info-area">
+          <h3>Hi my name is</h3>
+          <h1 class="hidebig">Jesse</h1>
+          <h1 class="hidebig">Morgenroth-Rebin</h1>
+          <h1 class="hidesmall">Jesse Morgenroth-Rebin</h1>
+          <h3>I design and develop modern websites and web content</h3>
+          <button>Contact Me</button>
+        </div>
+        <picture>
+          <source media="(min-width: 1100px)" srcset="img/desktop-back.png">
+          <source media="(min-width: 600px)" srcset="img/tablet-back.png">
+          <img src="img/mobile-back.png" alt="Self portrait" class="head-back">
+        </picture>
+      </header>
+
+      <!--Sections-->
+      <div class="webdd">
+        <img src="img/code.png" alt="Computer screen with Code">
+        <h2>Web Design<br>& Development</h2>
+      </div>
+      <div class="photov">
+        <img src="img/camera.png" alt="Camera">
+        <h2>Photography<br>& Videography</h2>
+      </div>
+      <div class="aboutm">
+        <img src="img/about-portrait-t.png" alt="Computer screen with Code">
+        <h2>About Me</h2>
+      </div>
+
+      <!--Footer-->
+      <footer>
+        <div class="socials">
+          <a href="facebook.com"><img src="img/iconfinder_Circled_Facebook_svg_5279111.png" alt="Facebook Profile"></a>
+          <a href="instagram.com"><img src="img/iconfinder_Circled_Instagram_svg_5279112.png" alt="Instagram Profile"></a>
+          <a href="linkedin.com"><img src="img/iconfinder_Circled_Linkedin_svg_5279114.png" alt="LinkedIn Profile"></a>
+          <a href="twitter.com"><img src="img/iconfinder_Circled_Twitter_svg_5279123.png" alt="Twitter Profile"></a>
+          <a href="youtube.com"><img src="img/iconfinder_Circled_Youtube_svg_5279120.png" alt="Youtube Profile"></a>
+          <a href="github.com"><img src="img/iconfinder_mark-github_298822.png" alt="Github Account"></a> 
+        </div>
+        <h6>Copyright © Jesse Morgenroth-Rebin 2020</h6>
+      </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>
