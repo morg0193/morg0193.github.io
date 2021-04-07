@@ -1,0 +1,87 @@
+/*Modal images concept source: https://www.w3schools.com/howto/howto_css_modal_images.asp*/
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+@keyframes entry{
+    from {transform:translateY(100px); opacity: 0%}
+    to {transform:translateY(0px); opacity: 100%}
+}
+
+body{
+    background-color: #111111;
+}
+
+h1{
+    text-transform: capitalize;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    color: white;
+    font-family: 'Itim', cursive;
+}
+
+#img-grid img{
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#img-grid img:hover{
+    transform: scale(1.02);
+    transition: 0.5;
+}
+
+#img-grid{
+    display: grid;
+    grid-auto-flow: dense;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+#img-section{
+    position: relative;
+}
+
+#img-popup{
+    display: none;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0 , 0.98);
+}
+
+#popup-image{
+    display: block;
+    width: 70%;
+    margin: auto;
+    margin-top: 120px;
+    padding-bottom: 30px;
+}
+
+#img-tag{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Itim', cursive;
+}
+
+#popup-image, #img-tag{
+    animation-name: entry;
+    animation-duration: 1s;
+}
+
+@media screen and (min-width: 1200px){
+    #popup-image{
+        width: 50%;
+    }
+}
