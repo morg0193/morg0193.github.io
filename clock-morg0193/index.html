@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Clock</title>
+</head>
+<body>
+    <div id="options">
+        <span class="material-icons md-light md-48" id="settings">settings</span>
+        <span class="material-icons md-light md-48" id="dateToggle">calendar_today</span>
+    </div>
+    <div id="settingsPanel">
+        <div class="material-icons md-light md-48" id="closeSettings">close</div>
+        <h1>Settings</h1>
+        <form id="settingsInput">
+            <label class="mainLabel">Select Time Format</label>
+            <fieldset>
+                <input type="radio" value="12" name="timeFormat" id="twelveHour" checked="checked">
+                <label for="twelveHour">12 Hour</label>
+                <input type="radio" value="24" name="timeFormat" id="twentyFourHour">
+                <label for="twentyFourHour">24 Hour</label>
+            </fieldset>
+            <hr>
+            <label for="name" class="mainLabel">Enter Your Name</label>
+            <input type="text" id="name">
+            <hr>
+            <label class="mainLabel">Show Date Info</label>
+            <fieldset>
+                <input type="radio" value="on" name="dateShow" id="on" checked="checked">
+                <label for="on">On</label>
+                <input type="radio" value="off" name="dateShow" id="off">
+                <label for="off">Off</label>
+            </fieldset>
+            <hr>
+            <button type="submit" class="btn">Update</button>
+        </form>
+    </div>
+    <div id="greeting"></div>
+    <div id="clock">
+        <div id="hours" class="clockNums"></div>
+        <div id="minutes" class="clockNums"></div>
+        <div id="seconds" class="clockNums"></div>
+        <div id="ampm"></div>
+    </div>
+    <div id="dateInfo"></div>
+    <div id="moreDateData">
+        <div class ="moreDat" id="dotw"></div>
+        <div class ="moreDat" id="dotm"></div>
+        <div class ="moreDat" id="doty"></div>
+        <div class ="moreDat" id="woty"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/1.25.0/luxon.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

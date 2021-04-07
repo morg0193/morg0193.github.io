@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@keyframes entry{
+    from {transform:translateX(-50px); opacity: 0%}
+    to {transform:translateX(0px); opacity: 100%}
+}
+
+@keyframes entryBottom{
+    from {transform:translateY(50px); opacity: 0%}
+    to {transform:translateY(0px); opacity: 100%}
+}
+
+@keyframes fadeIn{
+    from {opacity: 0%}
+    to {opacity: 100%}
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    margin: 0;
+}
+
+#clock{
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.clockNums{
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+}
+
+#hours{
+    padding-top: 10px;
+}
+
+#greeting{
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    width: 90%;
+    margin: auto;
+}
+
+#dateInfo{
+    display: none;
+    color: white;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    padding-top: 20px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.material-icons{
+    cursor: pointer;
+}
+
+.material-icons:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.material-icons.md-light {
+    color: rgba(255, 255, 255, 1); 
+}
+
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
+#options{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#settings, #dateToggle{
+    padding-top: 20px;
+    margin-right: 20px;
+}
+
+#settingsPanel{
+    display: none;
+    z-index: 2;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    max-width: 400px;
+    top: 0;
+    left: 0;
+    background: #111111;
+    animation-name: entry;
+    animation-duration: 1s;
+}
+
+h1{
+    color: white;
+    width: 80%;
+    margin: 20px auto 0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#closeSettings{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+#ampm{
+    display: none;
+    color: white;
+    text-align: center;
+    font-size: 90px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#settingsInput{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+fieldset{
+   margin: 0;
+   padding: 0;
+   border: none; 
+}
+
+label{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mainLabel{
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+button{
+    border: none;
+    padding: 10px;
+    width: 50%;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    font-weight: 600
+}
+
+#name{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+}
+
+hr{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.moreDat{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#moreDateData{
+    background-color: rgba(34,34,34, 0.3);
+    margin-top: 50px;
+    padding-top: 20px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    animation-name: entryBottom;
+    animation-duration: 1s;
+}
+
+@media screen and (min-width: 600px) {
+    #clock{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #hours{
+        padding-top: 0;
+    }
+
+    #hours:after{
+        content: "\00a0:\00a0";
+    }
+
+    #minutes:after{
+        content: "\00a0:\00a0";
+    }
+
+    #ampm{
+        padding-top: 47px;
+        font-size: 50px;
+        margin-left: 10px;
+    }
+
+    #greeting{
+        padding-top: 120px;
+    }
+
+    #dateInfo{
+        padding-top: 0;
+    }
+
+    #options{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    #settings, #dateToggle{
+        padding-top: 20px;
+        padding-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .clockNums{
+        font-size: 200px;
+    }
+
+    #ampm{
+        font-size: 100px;
+        padding-top: 97px;
+        margin-left: 20px;
+    }
+
+    #greeting{
+        font-size: 40px;
+        padding-top: 200px;
+    }
+
+    #dateInfo{
+        font-size: 40px;
+    }
+
+    #moreDateData{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
